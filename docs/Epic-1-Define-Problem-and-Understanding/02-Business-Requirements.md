@@ -13,7 +13,7 @@ The OptiCrop: Smart Agricultural Production Optimization Engine is designed to p
 The system shall allow users to enter the following agricultural and environmental parameters:
 
 - Nitrogen (N)
-- Phosphorous (P)
+- Phosphorus (P)
 - Potassium (K)
 - Temperature
 - Humidity
