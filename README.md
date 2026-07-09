@@ -192,35 +192,6 @@ Recommended Crop Displayed
 
 ---
 
-## 📸 Screenshots
-
-### Home Page
-
-> Add `home.png` inside the `docs` folder.
-
-```markdown
-![Home Page](docs/home.png)
-```
-
-### About Page
-
-```markdown
-![About Page](docs/about.png)
-```
-
-### Find Your Crop Page
-
-```markdown
-![Find Your Crop](docs/predict.png)
-```
-
-### Prediction Result
-
-```markdown
-![Prediction Result](docs/result.png)
-```
-
----
 
 ## 📈 Expected Output
 
