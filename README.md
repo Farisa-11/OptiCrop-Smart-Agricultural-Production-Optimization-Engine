@@ -1,7 +1,7 @@
 # 🌱 OptiCrop: Smart Agricultural Production Optimization Engine
 
 <p align="center">
-    <img src="assets/images/farm.jpg" alt="OptiCrop Banner" width="700">
+    <img src="assets/images/farm.jpg" width="700">
 </p>
 
 A Machine Learning-based web application that recommends the most suitable crop for cultivation based on soil nutrients and environmental conditions. The project is developed using **Python**, **Flask**, and **Scikit-learn** to support smart, data-driven, and sustainable farming.
@@ -86,32 +86,16 @@ OptiCrop-Smart-Agricultural-Production-Optimization-Engine
 ├── dataset/
 │   └── Crop_recommendation.csv
 ├── docs/
-│   ├── Conclusion/
-│   ├── Epic-1-Define-Problem-and-Understanding/
-│   ├── Epic-2-Data-Collection-and-Analysis/
-│   ├── Epic-3-Data-Pre-processing/
-│   ├── Epic-4-Model-Building/
-│   ├── Epic-5-Application-Building/
-│   ├── 00-Pre-requisites.md
-│   ├── 03-Entity-Relationship-Diagram.md
-│   └── 04-Workflow.md
 ├── models/
 │   └── model.pkl
 ├── notebooks/
-│   └── README.md
 ├── src/
 │   ├── app.py
 │   └── train_model.py
 ├── static/
-│   ├── css/
-│   └── images/
 ├── templates/
-│   ├── index.html
-│   ├── about.html
-│   └── predict.html
 ├── tests/
 │   └── test_app.py
-├── .gitignore
 ├── LICENSE
 ├── README.md
 └── requirements.txt
@@ -180,29 +164,29 @@ http://127.0.0.1:5000/
 
 ```text
 Agricultural Dataset
-        │
-        ▼
+          │
+          ▼
 Data Preprocessing
-        │
-        ▼
+          │
+          ▼
 Feature Selection
-        │
-        ▼
+          │
+          ▼
 Train Random Forest Model
-        │
-        ▼
+          │
+          ▼
 Save Trained Model (model.pkl)
-        │
-        ▼
+          │
+          ▼
 Flask Web Application
-        │
-        ▼
-User Inputs Soil & Environmental Parameters
-        │
-        ▼
+          │
+          ▼
+User Enters Agricultural Parameters
+          │
+          ▼
 Crop Prediction Generated
-        │
-        ▼
+          │
+          ▼
 Recommended Crop Displayed
 ```
 
@@ -210,9 +194,9 @@ Recommended Crop Displayed
 
 ## 📸 Screenshots
 
-> Add screenshots of your application inside the **docs** folder and update the paths below.
-
 ### Home Page
+
+> Add `home.png` inside the `docs` folder.
 
 ```markdown
 ![Home Page](docs/home.png)
@@ -224,10 +208,10 @@ Recommended Crop Displayed
 ![About Page](docs/about.png)
 ```
 
-### Prediction Page
+### Find Your Crop Page
 
 ```markdown
-![Prediction Page](docs/predict.png)
+![Find Your Crop](docs/predict.png)
 ```
 
 ### Prediction Result
@@ -269,7 +253,7 @@ Rice
 - 📡 IoT-based Smart Farming Sensors
 - 🤖 Deep Learning Models
 - ☁️ Cloud Deployment
-- 📱 Mobile Application
+- 📱 Mobile Application Development
 - 📊 Agricultural Analytics Dashboard
 
 ---
@@ -286,7 +270,7 @@ The project serves as a strong foundation for future developments in precision a
 
 **Farisa Almas**
 
-GitHub: **https://github.com/Farisa-11**
+GitHub: **[Farisa-11](https://github.com/Farisa-11)**
 
 ---
 
