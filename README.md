@@ -14,9 +14,27 @@ A Machine Learning-based web application that recommends the most suitable crop 
 
 ---
 
+## 📑 Table of Contents
+
+- Overview
+- Features
+- Technologies Used
+- Project Structure
+- Documentation
+- Installation
+- Running the Application
+- Machine Learning Workflow
+- Expected Output
+- Future Enhancements
+- Conclusion
+- Author
+- License
+
+---
+
 ## 📖 Overview
 
-OptiCrop is an intelligent agricultural recommendation system that predicts the most suitable crop using machine learning techniques. By analyzing soil nutrients and environmental parameters, the system helps farmers make informed decisions to improve productivity, optimize resource utilization, and promote sustainable agricultural practices.
+OptiCrop is an intelligent agricultural recommendation system that predicts the most suitable crop using Machine Learning techniques. By analyzing soil nutrients and environmental conditions, the system recommends the best crop for cultivation, helping farmers improve productivity and promote sustainable farming.
 
 The application accepts the following agricultural inputs:
 
@@ -28,19 +46,19 @@ The application accepts the following agricultural inputs:
 - Soil pH
 - Rainfall
 
-Based on these parameters, the trained machine learning model predicts the most suitable crop for cultivation.
+Based on these parameters, the trained machine learning model predicts the most suitable crop.
 
 ---
 
 ## ✨ Features
 
-- 🌾 Machine Learning-based crop recommendation
-- 🌱 User-friendly web interface
-- 📊 Data preprocessing and feature analysis
-- ⚡ Fast and accurate crop predictions
-- 💻 Flask backend integration
-- 📱 Responsive web design
-- 🌍 Supports sustainable farming practices
+- 🌱 Machine Learning-based crop recommendation
+- 🌾 Smart agricultural decision support
+- 📊 Data preprocessing and visualization
+- ⚡ Fast and accurate crop prediction
+- 💻 Flask-based web application
+- 📱 Responsive user interface
+- 🌍 Sustainable farming support
 
 ---
 
@@ -50,7 +68,7 @@ Based on these parameters, the trained machine learning model predicts the most 
 
 - HTML5
 - CSS3
-- Bootstrap
+- Bootstrap 5
 
 ### Backend
 
@@ -77,51 +95,75 @@ Based on these parameters, the trained machine learning model predicts the most 
 ```text
 OptiCrop-Smart-Agricultural-Production-Optimization-Engine
 │
-├── .github
-│   └── workflows
+├── .github/
+│   └── workflows/
 │       └── python-app.yml
 │
-├── assets
-│   └── images
+├── assets/
+│   └── images/
 │       └── farm.jpg
 │
-├── dataset
+├── dataset/
 │   └── Crop_recommendation.csv
 │
-├── docs
+├── docs/
 │   ├── 00-Pre-requisites.md
 │   ├── 03-Entity-Relationship-Diagram.md
 │   ├── 04-Workflow.md
-│   ├── Epic-1-Define-Problem-and-Understanding
-│   ├── Epic-2-Data-Collection-and-Analysis
-│   ├── Epic-3-Data-Pre-processing
-│   ├── Epic-4-Model-Building
-│   ├── Epic-5-Application-Building
-│   └── Conclusion
+│   ├── Conclusion/
+│   │   └── 01-Conclusion.md
+│   ├── Epic-1-Define-Problem-and-Understanding/
+│   ├── Epic-2-Data-Collection-and-Analysis/
+│   ├── Epic-3-Data-Pre-processing/
+│   ├── Epic-4-Model-Building/
+│   └── Epic-5-Application-Building/
 │
-├── models
+├── models/
 │   └── model.pkl
 │
-├── notebooks
+├── notebooks/
 │   └── README.md
 │
-├── src
+├── src/
 │   ├── app.py
 │   └── train_model.py
 │
-├── static
-│   ├── css
-│   └── images
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── images/
+│       └── farm.jpg
 │
-├── templates
+├── templates/
+│   ├── index.html
+│   ├── about.html
+│   └── predict.html
 │
-├── tests
+├── tests/
 │   └── test_app.py
 │
 ├── LICENSE
 ├── README.md
 └── requirements.txt
 ```
+
+---
+
+## 📚 Documentation
+
+The complete project documentation is available inside the **docs** folder.
+
+| Document | Description |
+|----------|-------------|
+| 00-Pre-requisites.md | Software and environment setup |
+| 03-Entity-Relationship-Diagram.md | Entity Relationship Diagram |
+| 04-Workflow.md | Overall project workflow |
+| Epic-1 | Problem Definition and Business Understanding |
+| Epic-2 | Data Collection and Analysis |
+| Epic-3 | Data Pre-processing |
+| Epic-4 | Machine Learning Model Building |
+| Epic-5 | Flask Application Development |
+| Conclusion | Final Project Summary |
 
 ---
 
@@ -147,13 +189,13 @@ python -m venv venv
 
 ### Activate Virtual Environment
 
-#### Windows
+**Windows**
 
 ```bash
 venv\Scripts\activate
 ```
 
-#### Linux / macOS
+**Linux/macOS**
 
 ```bash
 source venv/bin/activate
@@ -167,16 +209,17 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run the Application
+## ▶️ Running the Application
+
+Run the Flask application using:
 
 ```bash
-cd src
-python app.py
+python src/app.py
 ```
 
-After running the application, open your browser and visit:
+Open your browser and visit:
 
-```text
+```
 http://127.0.0.1:5000/
 ```
 
@@ -188,13 +231,22 @@ http://127.0.0.1:5000/
 Agricultural Dataset
           │
           ▼
-Data Preprocessing
+Data Collection
+          │
+          ▼
+Data Pre-processing
+          │
+          ▼
+Exploratory Data Analysis
           │
           ▼
 Feature Selection
           │
           ▼
-Train Random Forest Model
+Random Forest Model Training
+          │
+          ▼
+Model Evaluation
           │
           ▼
 Save Trained Model (model.pkl)
@@ -203,17 +255,16 @@ Save Trained Model (model.pkl)
 Flask Web Application
           │
           ▼
-User Enters Agricultural Parameters
+User Inputs Agricultural Parameters
           │
           ▼
-Crop Prediction Generated
+Crop Prediction
           │
           ▼
 Recommended Crop Displayed
 ```
 
 ---
-
 
 ## 📈 Expected Output
 
@@ -242,20 +293,20 @@ Rice
 
 - 🌦️ Weather API Integration
 - 🌱 Fertilizer Recommendation System
-- 🦠 Crop Disease Prediction
-- 📡 IoT-based Smart Farming Sensors
+- 🦠 Crop Disease Detection
+- 📡 IoT-enabled Smart Farming
 - 🤖 Deep Learning Models
 - ☁️ Cloud Deployment
-- 📱 Mobile Application Development
+- 📱 Android Application
 - 📊 Agricultural Analytics Dashboard
 
 ---
 
 ## 🎯 Conclusion
 
-The **OptiCrop: Smart Agricultural Production Optimization Engine** demonstrates how Machine Learning and Artificial Intelligence can be effectively applied to modern agriculture. By combining predictive analytics with soil and environmental data, the system provides accurate crop recommendations that improve productivity, optimize resource utilization, and support sustainable farming practices.
+OptiCrop demonstrates the practical application of Machine Learning in modern agriculture. By combining predictive analytics with soil and environmental data, the system provides accurate crop recommendations that improve productivity, optimize resource utilization, and support sustainable farming.
 
-The project serves as a strong foundation for future developments in precision agriculture, smart farming technologies, and intelligent agricultural decision-support systems.
+The project serves as a strong foundation for future developments in precision agriculture, smart farming, and intelligent agricultural decision-support systems.
 
 ---
 
@@ -263,7 +314,13 @@ The project serves as a strong foundation for future developments in precision a
 
 **Farisa Almas**
 
-GitHub: **[Farisa-11](https://github.com/Farisa-11)**
+GitHub: https://github.com/Farisa-11
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
 
 ---
 
