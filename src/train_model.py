@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
 # Read the dataset
-data = pd.read_csv("dataset/Crop_recommendation.csv")
+data = pd.read_csv("../dataset/Crop_recommendation.csv")
 
 # Display first five rows
 print(data.head())

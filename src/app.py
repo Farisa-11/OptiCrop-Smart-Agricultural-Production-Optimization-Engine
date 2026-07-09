@@ -1,12 +1,18 @@
 from flask import Flask, render_template, request
 import pickle
 import pandas as pd
-
+import os
 # Create Flask application
-app = Flask(__name__)
+BASE_DIR = os.path.dirname(__file__)
+
+app = Flask(
+    __name__,
+    template_folder="../templates",
+    static_folder="../static"
+)
 
 # Load trained machine learning model
-model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open('../models/model.pkl', 'rb'))
 
 # Home Page
 @app.route('/')

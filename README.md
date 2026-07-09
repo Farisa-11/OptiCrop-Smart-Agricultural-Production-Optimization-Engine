@@ -270,3 +270,8 @@ GitHub: **[Farisa-11](https://github.com/Farisa-11)**
 ## ⭐ Support
 
 If you found this project useful, please consider giving it a ⭐ on GitHub.
+<p align="center">
+    <img src="assets/images/farm.jpg" width="700">
+</p>
+
+A Machine Learning-based web application that recommends the most suitable crop...
