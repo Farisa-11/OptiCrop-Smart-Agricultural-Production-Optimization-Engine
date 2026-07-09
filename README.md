@@ -77,25 +77,47 @@ Based on these parameters, the trained machine learning model predicts the most 
 ```text
 OptiCrop-Smart-Agricultural-Production-Optimization-Engine
 │
-├── .github/
-│   └── workflows/
+├── .github
+│   └── workflows
 │       └── python-app.yml
-├── assets/
-│   └── images/
+│
+├── assets
+│   └── images
 │       └── farm.jpg
-├── dataset/
+│
+├── dataset
 │   └── Crop_recommendation.csv
-├── docs/
-├── models/
+│
+├── docs
+│   ├── 00-Pre-requisites.md
+│   ├── 03-Entity-Relationship-Diagram.md
+│   ├── 04-Workflow.md
+│   ├── Epic-1-Define-Problem-and-Understanding
+│   ├── Epic-2-Data-Collection-and-Analysis
+│   ├── Epic-3-Data-Pre-processing
+│   ├── Epic-4-Model-Building
+│   ├── Epic-5-Application-Building
+│   └── Conclusion
+│
+├── models
 │   └── model.pkl
-├── notebooks/
-├── src/
+│
+├── notebooks
+│   └── README.md
+│
+├── src
 │   ├── app.py
 │   └── train_model.py
-├── static/
-├── templates/
-├── tests/
+│
+├── static
+│   ├── css
+│   └── images
+│
+├── templates
+│
+├── tests
 │   └── test_app.py
+│
 ├── LICENSE
 ├── README.md
 └── requirements.txt
