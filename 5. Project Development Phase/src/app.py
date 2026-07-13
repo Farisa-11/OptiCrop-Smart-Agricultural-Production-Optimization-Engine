@@ -2,17 +2,25 @@ from flask import Flask, render_template, request
 import pickle
 import pandas as pd
 import os
-# Create Flask application
-BASE_DIR = os.path.dirname(__file__)
 
+# Base directory of the src folder
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Paths
+TEMPLATE_DIR = os.path.join(BASE_DIR, "..", "templates")
+STATIC_DIR = os.path.join(BASE_DIR, "..", "static")
+MODEL_PATH = os.path.join(BASE_DIR, "..", "models", "model.pkl")
+
+# Create Flask application
 app = Flask(
     __name__,
-    template_folder="../templates",
-    static_folder="../static"
+    template_folder=TEMPLATE_DIR,
+    static_folder=STATIC_DIR
 )
 
 # Load trained machine learning model
-model = pickle.load(open('../models/model.pkl', 'rb'))
+with open(MODEL_PATH, "rb") as file:
+    model = pickle.load(file)
 
 # Home Page
 @app.route('/')
@@ -41,7 +49,7 @@ def predict():
             ph = float(request.form['ph'])
             rainfall = float(request.form['rainfall'])
 
-            # Create a DataFrame with feature names
+            # Create DataFrame for prediction
             input_data = pd.DataFrame(
                 [[N, P, K, temperature, humidity, ph, rainfall]],
                 columns=[
@@ -55,7 +63,7 @@ def predict():
                 ]
             )
 
-            # Predict the crop
+            # Predict crop
             prediction = model.predict(input_data)[0]
 
         except Exception as e:
@@ -64,6 +72,6 @@ def predict():
 
     return render_template("predict.html", prediction=prediction)
 
-# Run the Flask application
+# Run Flask application
 if __name__ == "__main__":
     app.run(debug=True)
