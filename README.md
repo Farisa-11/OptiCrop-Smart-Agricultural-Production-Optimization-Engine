@@ -1,7 +1,7 @@
 # 🌱 OptiCrop: Smart Agricultural Production Optimization Engine
 
 <p align="center">
-    <img src="assets/images/farm.jpg" width="700">
+    ![OptiCrop Banner](5.%20Project%20Development%20Phase/static/images/farm.jpg)
 </p>
 
 A Machine Learning-based web application that recommends the most suitable crop for cultivation based on soil nutrients and environmental conditions. The project is developed using **Python**, **Flask**, and **Scikit-learn** to support smart, data-driven, and sustainable farming.
