@@ -4,56 +4,101 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>About | OptiCrop</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+<header class="navbar">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container nav-content">
 
-        <div class="container">
+        <div class="logo">
+            🌿 OptiCrop
+        </div>
 
-            <a class="navbar-brand fw-bold" href="/">🌿 OptiCrop</a>
+        <nav>
 
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
+            <a href="/">Home</a>
 
-                <span class="navbar-toggler-icon"></span>
+            <a class="active" href="/about">About</a>
 
-            </button>
+            <a href="/predict">Find Your Crop</a>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+        </nav>
 
-                <ul class="navbar-nav ms-auto">
+    </div>
 
-                    <li class="nav-item">
+</header>
 
-                        <a class="nav-link" href="/">Home</a>
 
-                    </li>
+<section class="about-page">
 
-                    <li class="nav-item">
+    <div class="about-container">
 
-                        <a class="nav-link active" href="/about">About</a>
+        <h1>About OptiCrop</h1>
 
-                    </li>
+        <p class="about-subtitle">
 
-                    <li class="nav-item">
+            OptiCrop is an AI-powered crop recommendation system that helps
+            farmers choose the best crop based on soil nutrients and
+            environmental conditions.
 
-                        <a class="nav-link" href="/predict">Find Your Crop</a>
+        </p>
 
-                    </li>
+
+        <div class="about-grid">
+
+            <div class="about-card">
+
+                <i class="fa-solid fa-bullseye"></i>
+
+                <h2>Project Objectives</h2>
+
+                <ul>
+
+                    <li>Recommend the most suitable crop.</li>
+
+                    <li>Improve agricultural productivity.</li>
+
+                    <li>Support sustainable farming.</li>
+
+                    <li>Optimize resource utilization.</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <i class="fa-solid fa-seedling"></i>
+
+                <h2>Input Parameters</h2>
+
+                <ul>
+
+                    <li>Nitrogen (N)</li>
+
+                    <li>Phosphorus (P)</li>
+
+                    <li>Potassium (K)</li>
+
+                    <li>Temperature</li>
+
+                    <li>Humidity</li>
+
+                    <li>Soil pH</li>
+
+                    <li>Rainfall</li>
 
                 </ul>
 
@@ -61,115 +106,45 @@
 
         </div>
 
-    </nav>
 
-    <!-- About Section -->
+        <div class="about-card full-width">
 
-    <section class="container my-5">
+            <i class="fa-solid fa-laptop-code"></i>
 
-        <h1 class="text-center text-success mb-4">
+            <h2>Technologies Used</h2>
 
-            About OptiCrop
+            <div class="tech-grid">
 
-        </h1>
+                <span>Python</span>
 
-        <p class="lead text-center">
+                <span>Flask</span>
 
-            OptiCrop is a Machine Learning-powered crop recommendation system
-            designed to help farmers select the most suitable crop based on
-            soil nutrients and environmental conditions.
+                <span>Scikit-learn</span>
 
-        </p>
+                <span>Pandas</span>
 
-        <div class="row mt-5">
+                <span>NumPy</span>
 
-            <div class="col-md-6">
+                <span>HTML5</span>
 
-                <div class="card shadow p-4">
+                <span>CSS3</span>
 
-                    <h3>Project Objectives</h3>
-
-                    <ul>
-
-                        <li>Recommend the best crop.</li>
-
-                        <li>Increase agricultural productivity.</li>
-
-                        <li>Support sustainable farming.</li>
-
-                        <li>Improve resource utilization.</li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-            <div class="col-md-6">
-
-                <div class="card shadow p-4">
-
-                    <h3>Input Parameters</h3>
-
-                    <ul>
-
-                        <li>Nitrogen (N)</li>
-
-                        <li>Phosphorus (P)</li>
-
-                        <li>Potassium (K)</li>
-
-                        <li>Temperature</li>
-
-                        <li>Humidity</li>
-
-                        <li>Soil pH</li>
-
-                        <li>Rainfall</li>
-
-                    </ul>
-
-                </div>
+                <span>Machine Learning</span>
 
             </div>
 
         </div>
 
-        <div class="card shadow mt-5 p-4">
+    </div>
 
-            <h3>Technologies Used</h3>
+</section>
 
-            <ul>
 
-                <li>Python</li>
+<footer>
 
-                <li>Flask</li>
+    © 2026 OptiCrop | Smart Agricultural Production Optimization Engine
 
-                <li>Scikit-learn</li>
-
-                <li>Pandas</li>
-
-                <li>NumPy</li>
-
-                <li>HTML</li>
-
-                <li>CSS</li>
-
-                <li>Bootstrap 5</li>
-
-            </ul>
-
-        </div>
-
-    </section>
-
-    <!-- Footer -->
-
-    <footer class="bg-success text-white text-center p-3">
-
-        © 2026 OptiCrop | Smart Agricultural Production Optimization Engine
-
-    </footer>
+</footer>
 
 </body>
 
